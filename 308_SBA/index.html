@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./Index.js" defer></script>
+    <title>Learner Data</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Learner Performance Data</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Learner ID</th>
+              <th>Average Score</th>
+              <th>Assignment 1</th>
+              <th>Assignment 2</th>
+              <th>Assignment 3</th>
+            </tr>
+          </thead>
+          <tbody id="learner-data">
+            <!-- Data will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+      <form id="data-form">
+      <fieldset>
+        <legend>Course Information</legend>
+        <label for="course-id">Course ID:</label>
+        <input type="number" id="course-id" required><br>
+        <label for="course-name">Course Name:</label>
+        <input type="text" id="course-name" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Assignment Group</legend>
+        <label for="group-id">Group ID:</label>
+        <input type="number" id="group-id" required><br>
+        <label for="group-name">Group Name:</label>
+        <input type="text" id="group-name" required><br>
+        <label for="group-weight">Group Weight:</label>
+        <input type="number" id="group-weight" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Assignments</legend>
+        <div id="assignments">
+          <!-- Dynamic assignment fields will be added here -->
+        </div>
+        <button type="button" id="add-assignment">Add Assignment</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Learner Submissions</legend>
+        <div id="submissions">
+          <!-- Dynamic submission fields will be added here -->
+        </div>
+        <button type="button" id="add-submission">Add Submission</button>
+      </fieldset>
+
+      <button type="submit">Process Data</button>
+    </form>
+
+    <!-- Results Table -->
+    <div class="results">
+      <!-- <h2>Learner Performance Data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Learner ID</th>
+            <th>Average Score</th>
+            <th>Assignment 1</th>
+            <th>Assignment 2</th>
+            <th>Assignment 3</th>
+          </tr>
+          <tbody id="learner-data">
+            Data will be inserted here -->
+          </tbody>
+        </thead>
+      
+      </table>
+    </div>
+  </div>
+</body>
+</html>
